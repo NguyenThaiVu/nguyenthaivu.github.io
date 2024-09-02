@@ -5,113 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thai Vu Nguyen - Homepage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
-        }
-
-        .header {
-            background-color: #f5f5f5;
-            padding: 10px 20px;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .header h1 {
-            margin: 0;
-            font-size: 24px;
-            display: inline-block;
-        }
-
-        .myname {
-            width: 20%;
-        }
-
-        .nav {
-            margin-top: 10px;
-            width: 80%;
-        }
-
-        .nav a {
-            margin-right: 25px;
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            display: flex;
-            flex: 1;
-        }
-
-        .sidebar {
-            width: 20%;
-            padding: 30px;
-            background-color: #f5f5f5;
-            border-right: 1px solid #ddd;
-            text-align: left;
-        }
-
-        .sidebar img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
-
-        .sidebar h2, .sidebar p {
-            margin: 10px 0;
-        }
-
-        .content {
-            width: 80%;
-            padding: 20px;
-            font-size: 1.1em;
-        }
-
-        h2 {
-            color: darkred;
-        }
-
-        .footer {
-            background-color: #f5f5f5;
-            text-align: center;
-            padding: 10px;
-            border-top: 1px solid #ddd;
-        }
-
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        text {
-            font-size: 1.2em;
-            margin-bottom: 5px;
-        }
-
-        ul {
-            margin-top: 0;
-            padding-left: 30px; 
-        }
-
-        p {
-            margin-bottom: 0;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -168,8 +62,9 @@
                     <b>Image Captioning</b> <a href="">[Link]</a>
                 </p>
                 <ul>
-                    <li>Description:.</li>
-                    <li>Key technologies:.</li>
+                    <li>Developed an image captioning model that generates descriptive captions from images.</li>
+                    <li>Utilized MobileNet as the image feature extractor and a transformer-decoder for text generation, trained on the Flickr8k dataset.</li>
+                    <li>Key technologies: Tensorflow.</li>
                 </ul>
             </div>
 
@@ -178,18 +73,20 @@
                     <b>Neural Machine Translation</b> <a href="">[Link]</a>
                 </p>
                 <ul>
-                    <li>Description:.</li>
-                    <li>Key technologies:.</li>
+                    <li>Developed an English-Vietnamese translation model using the Transformer architecture from the paper <i>"Attention is All You Need."</i>.</li>
+                    <li>Trained the model on the PhoMT dataset, consisting of over 3 million sentence pairs.</li>
+                    <li>Key technologies: Tensorflow.</li>
                 </ul>
             </div>
 
             <div class="text">
                 <p>
-                    <b>Image Classification - Google Cloud Platform</b> <a href="">[Link]</a>
+                    <b>Image Classification - Google Cloud</b> <a href="">[Link]</a>
                 </p>
                 <ul>
-                    <li>Description:.</li>
-                    <li>Key technologies:.</li>
+                    <li>Developed an object classification system with a Flask backend and Streamlit frontend, packaged in Docker. </li>
+                    <li>Stored Docker images in Google Artifact Registry and deployed via Google Cloud Run for scalable deployment.</li>
+                    <li>Key technologies: Docker, Flask, Google Cloud.</li>
                 </ul>
             </div>
 
@@ -198,8 +95,9 @@
                     <b>Emoji Search Engine</b> <a href="https://github.com/NguyenThaiVu/emoji_building_model">[Link]</a>
                 </p>
                 <ul>
-                    <li>Description: Developed an Emoji Search engine that utilizes GloVe embeddings, and XGBoost to predict the corresponding emotion.
-                        Deploy model into web application.</li>
+                    <li>Processed and augmented an emoji dataset to improve data quality.</li>
+                    <li>Utilized GloVe for word embedding and trained an XGBoost model to predict corresponding emotions.</li>
+                    <li>Deployed a web application on DigitalOcean with a Flask backend, providing a user-friendly interface for emotion search.</li>
                     <li>Key technologies: XGBoost, Pandas, Flask, DigitalOcean.</li>
                 </ul>
             </div>
@@ -209,8 +107,12 @@
                     <b>Hockey Match Analysis</b> <a href="https://github.com/Arminhosseini/IFT6758_project">[Link]</a>
                 </p>
                 <ul>
-                    <li>Description: Developd an end-to-end hockey game analysis system, including crawing hockey data, processing data and building prediction model.</li>
-                    <li>Key technologies: Streamlit, Flask, Docker, Sklearn.</li>
+                    <li>Utilized the National Hockey League (NHL) API to analyze real-time hockey match data,
+                        cleaning and visualizing the dataset using Pandas and Matplotlib to provide insights about Hockey data.</li>
+                    <li>Ttrained an XGBoost model to predict the expected goal probability of a given shot.
+                        Deploying the trained model in a web application for real-time user interaction.</li>
+                    <li>Used Git and Comet to ensure collaborative and data version control across team members.</li>
+                    <li>Key technologies: Pandas, Git, Comet, Pandas, Matplotlib, Seaborn.</li>
                 </ul>
             </div>
 
@@ -220,8 +122,8 @@
                     <b>Generative Adversarial Network</b> <a href="https://github.com/NguyenThaiVu/Generative-Adversarial-Network">[Link]</a>
                 </p>
                 <ul>
-                    <li>Description: research about several topic of Generative Adversarial Network (GAN), including: Semi-GAN, Conditional GAN, Progressive growing GAN,
-                        and Cycle GAN.</li>
+                    <li>Applied image generative techniques, including GAN, Semi-GAN, Conditional GAN, Progressive Growing GAN, and Cycle GAN,
+                        to generate high-quality synthetic images.</li>
                     <li>Key technologies: Python, Tensorflow/Keras.</li>
                 </ul>
             </div>
@@ -231,9 +133,7 @@
                     <b>Image Processing</b> <a href="https://github.com/KietAnh/GPU_SeamCarving">[Link]</a>
                 </p>
                 <ul>
-                    <li>Description: optimize the performance of the Seam Carving algorithm to resize images, 
-                        using CUDA programming for efficient parallel processing..</li>
-                    <li>Key technologies: C, CUDA, Parallel Programming</li>
+                    <li>Optimize the performance of the Seam Carving algorithm to resize images, using CUDA programming for parallel computation.</li>
                 </ul>
             </div>
 
