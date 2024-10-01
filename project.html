@@ -46,7 +46,7 @@
             <div class="text">
                 <ul>
                     <li><b>Programming Language:</b> Python, C/C++, C#.</li>
-                    <li><b>Framework:</b> Tensorflow, Pytorch.</li>
+                    <li><b>Framework:</b> Tensorflow, Pytorch, CUDA.</li>
                     <li><b>ML Engineering:</b> Google Cloud, Docker, ML Flow, Digital Ocean.</li>                    
                     <li><b>Software Engineer:</b> Flask, Streamlit, HTML/CSS.</li>
                     <li><b>Tools & Platforms:</b> Git/Github, SSH.</li>
@@ -59,31 +59,24 @@
 
             <div class="text">
                 <p>
-                    <b>Neural Machine Translation</b> <a href="">[Link]</a>
+                    <b>Quantization Neural Machine Translation</b> <a href="https://github.com/NguyenThaiVu/vi-en-nmt">[Link]</a>
                 </p>
                 <ul>
-                    <li>Developed an English-Vietnamese translation model using the Transformer architecture from paper <i>"Attention is All You Need."</i>.</li>
-                    <li>Trained on the PhoMT dataset with 3 million sentence pairs, achieving a BLEU score of 0.3</li>
+                    <li>Developed English-Vietnamese translation model using Transformer architecture from <i>"Attention is All You Need."</i>.</li>
+                    <li>Trained on the PhoMT dataset with 3 million sentence pairs, achieving a BLEU score of 0.26 on the test set.</li>
+                    <li>Applied asymmetric post-training quantization to multi-head attention layers, converting <i>float32</i> parameters to <i>int8</i>,
+                        resulting in a 20MB reduction in model size.</li>
                 </ul>
             </div>
-
+            
             <div class="text">
                 <p>
-                    <b>Image Captioning</b> <a href="">[Link]</a>
+                    <b>GPU Computation</b> <a href="https://github.com/NguyenThaiVu/cuda_project">[Link]</a>
                 </p>
                 <ul>
-                    <li>Developed deep learning model that generates descriptive captions from images.</li>
-                    <li>Utilized MobileNet as the image feature extractor and a transformer-decoder for text generation, trained on the Flickr8k dataset.</li>
-                </ul>
-            </div>
-
-            <div class="text">
-                <p>
-                    <b>Object Classification - Google Cloud</b> <a href="">[Link]</a>
-                </p>
-                <ul>
-                    <li>Developed an object classification system with a Flask backend and Streamlit frontend, containerized with Docker for deployment. </li>
-                    <li>Leveraged Google Artifact Registry for image storage and deployed via Google Cloud Run for scalable deployment.</li>
+                    <li>Accelerated Convolutional Neural Network inference (2D convolution, pooling, fully connected layers) using CUDA C++ for fast prediction.</li>
+                    <li>Implemented parallel matrix operations, including LU decomposition and image processing (edge detection, sharpening, and blurring) on GPU.</li>
+                    <li>Applied Seam Carving for intelligent resizing and Histogram Equalization for image enhancement.</li>
                 </ul>
             </div>
 
@@ -103,18 +96,9 @@
                     <b>Hockey Match Analysis</b> <a href="https://github.com/Arminhosseini/IFT6758_project">[Link]</a>
                 </p>
                 <ul>
-                    <li>Developed a real-time hockey match analysis system, deploying a web app for interactive user insights.</li>
-                    <li>Leveraged Pandas and visualization techniques to analyze hockey data.</li>
-                    <li>Trained an XGBoost model to predict shot goal probability and used Git and Comet for collaboration and data version control.</li>
-                </ul>
-            </div>
-
-            <div class="text">
-                <p>
-                    <b>Image Processing</b> <a href="https://github.com/KietAnh/GPU_SeamCarving">[Link]</a>
-                </p>
-                <ul>
-                    <li>Optimize the performance of the Seam Carving algorithm to resize images, using CUDA programming for parallel computation.</li>
+                    <li>Developed a real-time hockey match analysis web app with Flask, Streamlit, and Docker for deployment.</li>
+                    <li>Used NHL APIs to retrieve and analyze hockey data with statistical, cleaning data, and visualization techniques.</li>
+                    <li>Trained an XGBoost model to predict shot goal probability and used Comet for data version control.</li>
                 </ul>
             </div>
 
